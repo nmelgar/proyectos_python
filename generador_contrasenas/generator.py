@@ -4,7 +4,11 @@ import random
 # uppercase
 # symbols
 
-# characters = int(input("How many characters? (8 or +)"))
+print("|----------------------|")
+print("|--Password Generator--|")
+print("|----------------------|")
+print("\n")
+characters = int(input("# Of characters for your password? (8 or +): "))
 
 
 def create_numero():
@@ -30,22 +34,22 @@ def create_symbol():
     return symbols[i]
 
 
-functions = [create_numero(), create_lower_letter(),
-             create_upper_letter(), create_symbol()]
+functions = [create_numero, create_lower_letter,
+             create_upper_letter, create_symbol]
 
 
 def create_password(char_length, functions):
     password = ""
-    counter = 0
-    while counter < char_length:
-        caracter = ""
+    for character in range(char_length):
         rand_index = random. randint(0, (len(functions) - 1))
-        add_character = functions[rand_index]
-        caracter = add_character
-        password += caracter
-        counter += 1
-
+        call_function = functions[rand_index]()
+        character = call_function
+        password += character
     return password
 
 
-print(create_password(12, functions))
+if characters < 8:
+    raise ValueError("Password must have 8 or more characters")
+else:
+    final_password = create_password(characters, functions)
+    print(f"Your password is: {final_password}")
