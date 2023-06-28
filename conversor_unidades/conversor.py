@@ -1,35 +1,36 @@
-unidades = {"m": "m->cm", "kg": "kg->g", "l": "L->mL", "h": "h->min", "c": "°C->°F", "m2": "m2->ft2",
-            "kmh": "km/h->m/s", "t": "t->kg", "l100": "L/100km->gal/mi", "usd": "USD->Euro"}
+from funciones import *
+
+unities = {"m": "m->cm", "kg": "kg->g", "l": "L->mL", "h": "h->min", "c": "°C->°F", "m2": "m2->ft2",
+           "kmh": "km/h->m/s", "t": "t->kg", "l100": "L/100km->gal/mi", "usd": "USD->Euro"}
+
+run = True
+print("|-----------------------|")
+print("|----Unit Converter-----|")
+print("|-----------------------|")
+print("\n")
 
 
-def menu(unidades):
-    i = 1
-    for opcion, unidad in unidades.items():
-        print(f"{i}. {unidad} | Opc: {opcion}")
-        i += 1
-    return unidades
+while run:
+    print("\n")
+    menu(unities)
+    print("\nType E to exit")
+    user_choice = input("\nChoose an option: ")
 
+    if user_choice.lower() == "m":
+        unity = converter_body()
+        result = meter_cm(unity)
 
-def metro_cm(unidad):
-    resultado = unidad * 100
-    return f"{unidad}m son {resultado}cm"
+    elif user_choice.lower() == "kg":
+        unity = converter_body()
+        result = kilogram_gm(unity)
 
+    elif user_choice.lower() == "l":
+        unity = converter_body()
+        result = liter_ml(unity)
 
-def kilogramo_gm(unidad):
-    resultado = unidad * 1000
-    return f"{unidad}kg son {resultado}g"
+    elif user_choice.lower() == "h":
+        unity = converter_body()
+        result = hour_m(unity)
 
-
-def litro_ml(unidad):
-    resultado = unidad * 100
-    return f"{unidad}L son {resultado}mL"
-
-
-def hora_m(unidad):
-    resultado = unidad * 60
-    return f"{unidad}h son {resultado}min"
-
-
-def gradoc_f(unidad):
-    resultado = unidad * (9/5) + 32
-    return f"{unidad}°C son {resultado}°F"
+    print(f"\nResult:\n{result}")
+    print("\n|-----------------------|\n")

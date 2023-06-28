@@ -1,0 +1,21 @@
+
+Metro (m) -> Centímetro (cm): Multiplica por 100.
+Kilogramo (kg) -> Gramo (g): Multiplica por 1000.
+Litro (L) -> Mililitro (mL): Multiplica por 1000.
+Hora (h) -> Minuto (min): Multiplica por 60.
+Grado Celsius (°C) -> Grado Fahrenheit (°F): Multiplica por 9/5 y suma 32.
+Metro cuadrado (m²) -> Pie cuadrado (ft²): Multiplica por 10.764.
+Kilómetro por hora (km/h) -> Metro por segundo (m/s): Divide por 3.6.
+Tonelada métrica (t) -> Kilogramo (kg): Multiplica por 1000.
+Litro por 100 kilómetros (L/100 km) -> Galón por milla (gal/mi): Divide 235.215 por el valor en L/100 km.
+Dólar estadounidense ($) -> Euro (€): Multiplica por la tasa de cambio actual.
+Metro cúbico (m³) -> Litro (L): Multiplica por 1000.
+Kilómetro (km) -> Metro (m): Multiplica por 1000.
+Libra (lb) -> Kilogramo (kg): Multiplica por 0.453592.
+Galón estadounidense (gal) -> Litro (L): Multiplica por 3.78541.
+Segundo (s) -> Milisegundo (ms): Multiplica por 1000.
+    Newton (N) -> Libra-fuerza (lbf): Multiplica por 0.224809.
+Pulgada (in) -> Centímetro (cm): Multiplica por 2.54.
+Metro cúbico por segundo (m³/s) -> Litro por segundo (L/s): Multiplica por 1000.
+Byte (B) -> Kilobyte (KB): Divide por 1024.
+Metro por segundo al cuadrado (m/s²) -> Gravedad terrestre (g): Divide por 9.81.
