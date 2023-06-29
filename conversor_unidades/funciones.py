@@ -5,10 +5,21 @@ def menu(unities):
         i += 1
     return unities
 
+
 def converter_body():
     print("\n|-----------------------|")
-    unity = float(input("\nEnter the amount: "))
-    return unity
+    while True:
+        try:
+            unity = float(input("\nEnter the amount: "))
+            return unity
+        except ValueError:
+            print("\nPlease enter a valid number.")
+
+
+def print_result(result):
+    print(f"\nResult:\n{result}")
+    print("\n|-----------------------|\n")
+
 
 def meter_cm(amount):
     result = amount * 100

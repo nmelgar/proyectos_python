@@ -14,7 +14,7 @@ Kilómetro (km) -> Metro (m): Multiplica por 1000.
 Libra (lb) -> Kilogramo (kg): Multiplica por 0.453592.
 Galón estadounidense (gal) -> Litro (L): Multiplica por 3.78541.
 Segundo (s) -> Milisegundo (ms): Multiplica por 1000.
-    Newton (N) -> Libra-fuerza (lbf): Multiplica por 0.224809.
+Newton (N) -> Libra-fuerza (lbf): Multiplica por 0.224809.
 Pulgada (in) -> Centímetro (cm): Multiplica por 2.54.
 Metro cúbico por segundo (m³/s) -> Litro por segundo (L/s): Multiplica por 1000.
 Byte (B) -> Kilobyte (KB): Divide por 1024.
