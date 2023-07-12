@@ -1,8 +1,8 @@
 # 1 create database connection (completed)
 # 2 display menu (completed)
-#   display tasks before menu ()
+#   display tasks before menu (completed)
 # 3 add task to db (completed)
-# 4 modify task
+# 4 modify task ()
 # 5 delete task
 # 6 stop program
 
@@ -18,6 +18,10 @@ menu(menu_items)
 # user_input = input("Add your task: ")
 # add_task(user_input)
 
+# update_task()
+
+# for x in myresult:
+# print(myresult[1][1])
 
 # def main():
 #     print("Hello World")

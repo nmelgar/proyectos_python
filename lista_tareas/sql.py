@@ -9,6 +9,11 @@ mydb = mysql.connector.connect(
 
 # create cursor
 mycursor = mydb.cursor()
+# sql = "SELECT task FROM todo"
+# mycursor.execute(sql)
+# result = mycursor.fetchall()
+# for x in result:
+#     print(x)
 # create db
 # sql = "CREATE DATABASE todo_list"
 
