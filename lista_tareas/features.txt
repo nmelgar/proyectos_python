@@ -1,0 +1,8 @@
+# 1 create database connection (completed)
+# 2 display menu (completed)
+#   display tasks before menu (completed)
+#   add loop for the program to keep running
+# 3 add task to db (completed)
+# 4 modify task (completed)
+# 5 delete task (completed)
+# 6 stop program (completed)

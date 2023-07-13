@@ -1,30 +1,30 @@
-# 1 create database connection (completed)
-# 2 display menu (completed)
-#   display tasks before menu (completed)
-# 3 add task to db (completed)
-# 4 modify task ()
-# 5 delete task
-# 6 stop program
-
 from functions import *
 from sql import *
 
 menu_items = ["Add task", "Edit task", "Delete task", "Exit"]
-
+print("\n|--------------|")
 print("|--TO-DO LIST--|")
-display_tasks()
-menu(menu_items)
+run = True
 
-# user_input = input("Add your task: ")
-# add_task(user_input)
+while run:
+    display_tasks()
+    menu(menu_items)
+    user_choice = input("\nChoose an option: ")
 
-# update_task()
+    try:
+        user_choice = int(user_choice)
+        if user_choice == 1:
+            user_input = input("\nAdd new task: ")
+            add_task(user_input)
+        elif user_choice == 2:
+            update_task()
+        elif user_choice == 3:
+            delete_task()
+        elif user_choice == 4:
+            run = False
+            print("\nPlease come back later :)!")
+        else:
+            print("\nPlease enter a valid number")
 
-# for x in myresult:
-# print(myresult[1][1])
-
-# def main():
-#     print("Hello World")
-
-# if __name__ == "__main__":
-#     main()
+    except ValueError:
+        print("\nPlease enter a valid number.")
